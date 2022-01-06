@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&display=swap");
+
+html,
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+// Base container
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fce3ff;
+}
+
+.main-container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff1e7f;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px #b1b1b1;
+}
+
+// Base form
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// Base Text feild
+input[type="text"],
+[type="email"],
+[type="password"] {
+  height: 1.7em;
+  border: 2px solid #bd0e60;
+  border-radius: 5px;
+  transition: border 300ms;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #910d4a;
+  }
+}
+
+// Base Button
+input[type="submit"],
+button {
+  height: 2.3em;
+  background-color: #ff4797;
+  border: 2px solid #bd0e60;
+  color: #62002e;
+  border-radius: 5px;
+  transition: all 300ms;
+
+  &:hover {
+    background-color: #ec3e8a;
+    border: 2px solid #910d4a;
+    color: #270012;
+  }
+
+  &:active {
+    background-color: #d3387b;
+  }
+}
+
+// Base label
+.label {
+  color: #ffffff;
+}
+
+// Base title
+.title {
+  font-size: xx-large;
+  color: #ffffffff;
+}
+
+// Base link
+.link {
+  color: #ffffff;
+  font-style: italic;
+  text-decoration: none;
+  margin: 0.2em;
+}
+
+// Base separator
+.separator {
+  width: 90%;
+  height: 1px;
+  background-color: #ff6bab;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .main-container {
+    width: 50vw !important;
+  }
+
+  .form {
+    width: 20em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

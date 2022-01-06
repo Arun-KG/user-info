@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# User Info Applicaton
+## A basic implementation of React.js 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>The user Info app is designed and developed as a technology demonstration of React. Js and associated libraries such as "react-router-dom", "axios" and "sass".
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+Clone the repository, install the dependencies and start the server.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+User Info Application uses [Node.js](https://nodejs.org/) v14.18.2.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+cd user-info
+npm i 
+npm start
+```
 
-### `npm test`
+### Features
+##### User side
+- A user can register an account by providing the required information from the ***"Register User"*** form which is set as the root of the application .
+- After Registration User will be redirected to the ***"User Login"*** form where the user can login to the ***"Home page"*** of the application.
+- If a user alredy have an account they can login by clicking the link ***"
+Alredy a user, login here"*** at the bottom of the ***"Register User"*** form.
+- If the login was successful user will be taken to the ***"Home page"*** where the user will be provided with a list of data of random imaginary peoples fetched from "jsonplaceholder.typicode.com".
+- The user can see the full details of each imaginary person by ***Clicking on each card*** that shows the basic information about each person.
+- The ***"Home page"*** navigation bar has a ***Logout*** button on the right side, by clicking on that button user will be loged out of the ***"Home page"***.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Administrator side
+- An Administrtor can register an account by providing the required information from the ***"Register Admin"*** from the URL ***"/admin_register"***. 
+- After Registration Admin will be redirected to the ***"Admin Login"*** form where the admin can login to the ***"Home page"*** of the application.
+- If the person is already an admin they can login from the ***"Admin Login"*** from at rthe URL ***"/admin"***.
+- After successful loging in the administrator can view the ***"Dashboard"*** from which the admin can see the user name and email of ***"Users"*** of the application.
+- The ***"Dashboard"*** is also provided with a ***Logout*** button which will logout the admin and redired to ***Admin Login*** form.
 
-### `npm run build`
+> The application is provided with ***links*** athe bottom of each forms for the easy navigation without manupulation the URL.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+User Info Application uses a number of open source projects to work properly:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React Js - Used at the core.
+- react-router-dom - enables the basic routing in react.
+- sass - is used for writing CSS a little easear.

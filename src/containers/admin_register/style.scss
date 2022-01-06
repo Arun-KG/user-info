@@ -1,0 +1,9 @@
+.checkbox-container {
+  display: flex;
+  margin-top: 0.5em;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 3px;
+}

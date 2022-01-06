@@ -1,0 +1,52 @@
+.dashboard-container {
+  background-color: #fce3ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  width: fill;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff96;
+  padding: 0.5em;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 2px 5px #d5d5d5;
+
+  & > span {
+    font-weight: bold;
+  }
+}
+
+.card-contaner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fill;
+}
+
+.card {
+  background-color: #ffffff;
+  margin: 1em;
+  padding: 1em;
+  width: fill;
+  box-shadow: 0px 2px 13px #b49eb7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-semi-title {
+  font-weight: bold;
+  margin: 0em 2em 2em 0em;
+}
+
+.card-sub-content {
+  margin: 0em 0em 0em 1em;
+}
